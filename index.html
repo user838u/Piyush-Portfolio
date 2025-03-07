@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .thumbnail-slider {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 30px;
+            position: relative;
+        }
+        .thumbnail-slider img {
+            height: 150px;
+            margin: 0 10px;
+            border-radius: 5px;
+            animation: slide 15s linear infinite;
+        }
+        @keyframes slide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Video Editing Portfolio</h1>
+        <p>Check out some of my best edits below:</p>
+        
+        <!-- Portfolio Sections -->
+        <div class="section">
+            <h2>YouTube Videos</h2>
+            <video controls autoplay loop>
+                <source src="youtube1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay loop>
+                <source src="youtube2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section">
+            <h2>Instagram Reels</h2>
+            <video controls autoplay loop>
+                <source src="reel1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay loop>
+                <source src="reel2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section">
+            <h2>Ads</h2>
+            <video controls autoplay loop>
+                <source src="ad1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay loop>
+                <source src="ad2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Thumbnail Project Work -->
+        <div class="section">
+            <h2>Thumbnail Designs</h2>
+            <div class="thumbnail-slider">
+                <img src="thumb1.jpg" alt="Thumbnail 1">
+                <img src="thumb2.jpg" alt="Thumbnail 2">
+                <img src="thumb3.jpg" alt="Thumbnail 3">
+                <img src="thumb4.jpg" alt="Thumbnail 4">
+                <img src="thumb5.jpg" alt="Thumbnail 5">
+                <img src="thumb6.jpg" alt="Thumbnail 6">
+                <img src="thumb7.jpg" alt="Thumbnail 7">
+                <img src="thumb8.jpg" alt="Thumbnail 8">
+                <img src="thumb9.jpg" alt="Thumbnail 9">
+                <img src="thumb10.jpg" alt="Thumbnail 10">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
